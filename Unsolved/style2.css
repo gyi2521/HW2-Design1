@@ -1,0 +1,108 @@
+body {
+    height: 98vh;
+}
+
+main {
+    background-color: rgb(22, 22, 22);
+    display: grid;
+    
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+}
+
+.box {
+
+    height: 200px;
+    background-position: center; 
+    background-repeat: no-repeat;     
+}
+
+.boats {
+    background-image: url("images/lake.jpg"); 
+}
+
+.building {
+    background-image: url("images/empire.jpg");
+}
+
+.person {
+    background-image: url("images/person.jpg");
+}
+
+.tree {
+    background-image: url("images/tree.jpg");
+}
+
+
+h1{
+    font-family: 'Oswald';
+    font-size: 35px;
+    line-height: 55px;
+    color: rgb(229, 226, 226);
+}
+
+h2{
+    font-family: 'Sonsie One';
+    font-size: 25px;
+    color: rgb(229, 226, 226);
+}
+
+p{   
+    padding: 15px;
+    border-top: 2px solid #000000;
+    border-bottom: 1px dotted #000000;
+    background-color: white;
+    color: black;
+    font-family: 'EB Garamond';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.architecture {
+    display: none;
+}
+
+.sand {
+    display: none;
+}
+
+.bridge {
+    display: none;
+}
+
+.camera {
+    display: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        background-color: blue;
+    }
+
+    .box {
+
+        background-color: rgb(117, 73, 73);
+    }   
+
+    .architecture {
+        background-image: url("images/geo.jpg");
+    }
+
+    .sand {
+        background-image: url("images/sand.jpg");
+    }
+
+    .bridge {
+        background-image: url("images/bridge.jpg");
+    }
+
+    .camera {
+        background-image: url("images/camera.jpg");
+    }
+
+}
